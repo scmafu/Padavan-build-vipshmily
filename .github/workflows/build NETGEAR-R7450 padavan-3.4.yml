@@ -73,12 +73,12 @@ jobs:
         mkdir -p /opt/images/                        
     - name: Build Firmware
       run: |
-        #if [ -f public/e2fsprogs.Makefile ] ; then
-        #mv -f public/e2fsprogs.Makefile ${{ env.DIR }}/trunk/user/e2fsprogs/Makefile
-        #echo "Makefile file copy success"
-        #else
-        #exit 1
-        #fi
+        if [ -f public/e2fsprogs.Makefile ] ; then
+        mv -f public/e2fsprogs.Makefile ${{ env.DIR }}/trunk/user/e2fsprogs/Makefile
+        echo "Makefile file copy success"
+        else
+        exit 1
+        fi
         cd ${{ env.DIR }}/trunk
         echo "CPU超频到$MHZ"mhz
         echo "修改CPU频率"
