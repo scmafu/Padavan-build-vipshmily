@@ -182,7 +182,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=n" >>.config #wireguard 10k
         ##内网穿透服务##
         echo "CONFIG_FIRMWARE_INCLUDE_ALDRIVER=y" >> .config #ALDRIVER  ~3m
-        echo "CONFIG_FIRMWARE_INCLUDE_MSD_LITE=y" >> .config #MSD_LITE
+        echo "CONFIG_FIRMWARE_INCLUDE_MSD_LITE=n" >> .config #MSD_LITE
         echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >> .config #MTR
         echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=y" >> .config #NAPT66
         #########################################################################################
