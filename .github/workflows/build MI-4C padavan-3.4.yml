@@ -14,7 +14,7 @@ on:
         required: false
 env:
   TNAME: "${{ github.event.inputs.production }}"
-  REPOSITORY_URL: https://github.com/vipshmily/Padavan-3.4-KVR.git
+  REPOSITORY_URL: https://github.com/vb1980/Padavan-KVR.git
         
 jobs:
   build:
